@@ -1,0 +1,17 @@
+.modal {
+  transition: opacity 0.25s ease;
+}
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+.instagram {
+  background-image: url("/image/instagram1.png");
+}
+div:hover > img:first-of-type {
+  display: none;
+}
+
+div:hover > img:last-of-type {
+  display: block;
+}

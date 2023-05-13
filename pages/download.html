@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>Home Page</title>
+  </head>
+  <body class="bg-black text-white">
+    <!--Header-->
+    <header
+      class="xs:hidden md:block border-b-2 border-solid border-gray-600 mx-auto"
+    >
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between items-center m-3">
+          <div
+            class="w-full md:w-auto flex flex-wrap md:flex-nowrap md:space-x-4 items-center mb-4 md:mb-0"
+          >
+            <div>
+              <p class="font-sf text-[#FFFFFF4D]">Your IP: 84.107.121.63</p>
+            </div>
+            <div>
+              <span class="font-sf text-[#FFFFFF4D]">Status: </span>
+              <span class="text-[#E84E4E]">Unprotected</span>
+            </div>
+          </div>
+          <div class="w-full md:w-auto flex justify-end items-center space-x-6">
+            <a class="opacity-20 hover:opacity-100" href="">
+              <img src="/image/facebook-s=hover.png" alt="" />
+            </a>
+            <a class="opacity-20 hover:opacity-100" href="">
+              <img src="/image/instagram-s=hover.png" alt="" />
+            </a>
+            <a class="opacity-20 hover:opacity-100" href="">
+              <img src="/image/linkedin-s=hover.png" alt="" />
+            </a>
+            <a class="opacity-20 hover:opacity-100" href="">
+              <img src="/image/twitter-s=hover.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mainNav -->
+    <nav class="m-3">
+      <div class="container mx-auto">
+        <div class="flex">
+          <div class="md:basis-1/5 xs:basis-1/2">
+            <div class="ml-4">
+              <a href="">
+                <img src="/image/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="md:basis-3/5 xs: hidden md:flex mx-auto">
+            <div class="m-3">
+              <ul class="flex justify-center">
+                <li class="mx-10">
+                  <a class="font-sf font-medium" href="/pages/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="mx-10">
+                  <a class="font-sf font-medium" href="/pages/pricing.html"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="mx-10">
+                  <a class="font-sf font-medium" href="/pages/support.html"
+                    >Support</a
+                  >
+                </li>
+                <li class="mx-10">
+                  <a class="font-sf font-medium" href="/pages/download.html"
+                    >Download</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:basis-1/5 hidden md:flex">
+            <div class="flex justify-end mr-2">
+              <button
+                class="bg-[#FACA7F] hover:bg-[#F8AF3F] text-[#32230D] font-bold md:py-3 lg:py-4 lg:px-6 rounded-[16px]"
+              >
+                <a href="" class="font-sf md:m-2">Log In</a>
+              </button>
+            </div>
+          </div>
+          <div class="md:hidden flex basis-4/5 justify-end">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-white hover:text-[#FACA7F]"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden mobile-menu justify-center">
+        <ul class="space-y-3">
+          <li class="active">
+            <a
+              href="index.html"
+              class="block font-sf text-sm px-2 py-4 text-black bg-white transition duration-300 font-bold border rounded-md"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block font-sf text-sm px-2 py-4 text-black bg-white transition duration-300 font-bold rounded-md"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="support.html"
+              class="block font-sf text-sm px-2 py-4 text-black bg-white transition duration-300 font-bold rounded-md"
+              >Support</a
+            >
+          </li>
+          <li>
+            <a
+              href="download.html"
+              class="block font-sf text-sm px-2 py-4 text-black bg-white transition duration-300 font-semibold rounded-md"
+              >Download</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+
+    <!-- mainbar -->
+    <section>
+      <div class="ms:container ms:mx-auto">
+        <div class="ml-4 mt-32">
+          <p
+            class="md:w-[40%] ms:w-[70%] font-manrope font-extrabold md:text-[48px] xs:text-[30px] mb-10"
+          >
+            Friendly and Easy-to-Use Interface for Windows
+          </p>
+          <p class="md:w-[38%] xs:w-[70%] font-sf">
+            The OCTO Vault VPN app for Windows is the one of the greatest
+            solution for secure and private internet browsing. It is
+            user-friendly and equipped with top-rated encryption.
+          </p>
+          <p class="md:w-[38%] xs:w-[70%] font-sf mt-5">
+            Download and install the Windows app now and log in with your
+            account.&nbsp; If you don't have an account yet,
+            <a href="">sign up here</a>
+          </p>
+        </div>
+        <div class="mt-10 ml-4">
+          <button
+            class="bg-[#FACA7F] hover:bg-[#F8AF3F] text-[#32230D] font-bold py-4 px-8 rounded-[16px]"
+          >
+            <a class="font-sf flex" href="">
+              <img src="/image/downolad-icons.png" alt="" />
+              &nbsp;&nbsp; Get Started!
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="md:block xs:hidden">
+      <div class="xs:flex xs:justify-center mt-40">
+        <p class="font-manrope font-extrabold md:text-36 xs:text-xl">
+          Choose your device system
+        </p>
+      </div>
+      <div class="xs:flex xs:justify-center mt-10 md:space-x-24 xs:space-x-6">
+        <div
+          class="relative p-10 w-[290px] h-[126px] rounded-[24px] bg-iconbg hover:bg-[#FACA7F] cursor-pointer transition-all duration-300 ease-in-out"
+          onclick="changeImage()"
+        >
+          <img
+            src="/image/microsoft-home=hover.png"
+            alt="Image 1"
+            id="image1"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-100"
+          />
+          <img
+            src="/image/downolad-icons.png"
+            alt="Image 2"
+            id="image2"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-0"
+          />
+          <span
+            id="text"
+            class="absolute right-[65px] top-[38px] p-2 text-white font-sf font-semibold text-[20px] transition-all duration-300 ease-in-out"
+            >Windows</span
+          >
+        </div>
+        <div
+          class="relative ml-10 p-10 w-[290px] h-[126px] rounded-[24px] bg-iconbg hover:bg-[#FACA7F] cursor-pointer transition-all duration-300 ease-in-out"
+          onclick="changeImage()"
+        >
+          <img
+            src="/image/android-home=hover.png"
+            alt="Image 1"
+            id="image1"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-100"
+          />
+          <img
+            src="/image/logo-platforms.png"
+            alt="Image 2"
+            id="image2"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-0"
+          />
+          <span
+            id="text"
+            class="absolute right-[65px] top-[38px] p-2 text-white font-sf font-semibold text-[20px] transition-all duration-300 ease-in-out"
+            >Windows</span
+          >
+        </div>
+        <div
+          class="relative ml-10 p-10 w-[290px] h-[126px] rounded-[24px] bg-iconbg hover:bg-[#FACA7F] cursor-pointer transition-all duration-300 ease-in-out"
+          onclick="changeImage()"
+        >
+          <img
+            src="/image/apple-home=hover.png"
+            alt="Image 2"
+            id="image1"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-100"
+          />
+          <img
+            src="/image/logo-platforms (1).png"
+            alt="Image 2"
+            id="image2"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-0"
+          />
+          <span
+            id="text"
+            class="absolute right-[65px] top-[38px] p-2 text-white font-sf font-semibold text-[20px] transition-all duration-300 ease-in-out"
+            >Windows</span
+          >
+        </div>
+        <div
+          class="relative ml-10 p-10 w-[290px] h-[126px] rounded-[24px] bg-iconbg hover:bg-[#FACA7F] cursor-pointer transition-all duration-300 ease-in-out"
+          onclick="changeImage()"
+        >
+          <img
+            src="/image/ios-home=hover.png"
+            alt="Image 1"
+            id="image1"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-100"
+          />
+          <img
+            src="/image/logo-platforms (2).png"
+            alt="Image 2"
+            id="image2"
+            class="absolute left-[38px] top-[39px] w-12 h-12 object-cover transition-all duration-300 ease-in-out opacity-0"
+          />
+          <span
+            id="text"
+            class="absolute right-[65px] top-[38px] p-2 text-white font-sf font-semibold text-[20px] transition-all duration-300 ease-in-out"
+            >Windows</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="xs:container xs:mx-auto">
+      <div class="flex justify-center md:mt-40 xs:mt-20">
+        <p class="font-manrope font-extrabold md:text-36 xs:text-xl">
+          How to use the app on Windows
+        </p>
+      </div>
+      <div class="md:flex xs:flex-row justify-between mt-10">
+        <div class="basis-1/3 mx-16">
+          <div class="h-16 w-16 rounded-full bg-iconbg relative items-center">
+            <p
+              class="font-sf absolute font-semibold left-7 top-5 text-[#FACA7F]"
+            >
+              1
+            </p>
+          </div>
+          <p class="font-sf text-xl font-semibold mt-8">
+            Install the app and log in
+          </p>
+          <p
+            class="mt-5 font-sf text-[16px] font-medium text-justify opacity-20"
+          >
+            Once you've installed the app, open it and sign in with your
+            account. If you already have an account with us, you can access the
+            free plan by logging in with the same credentials.
+          </p>
+        </div>
+        <div class="basis-1/3 mx-16">
+          <div class="h-16 w-16 rounded-full bg-iconbg relative items-center">
+            <p
+              class="font-sf absolute font-semibold left-7 top-5 text-[#FACA7F]"
+            >
+              2
+            </p>
+          </div>
+          <p class="font-sf text-xl font-semibold mt-8">
+            Connect to desired server
+          </p>
+          <p
+            class="mt-5 font-sf text-[16px] font-medium text-justify opacity-20"
+          >
+            Search for your desired server location or select one of the
+            categories (streaming, high speed or ad-blocker) based on your
+            needs.
+          </p>
+        </div>
+        <div class="basis-1/3 mx-16">
+          <div class="h-16 w-16 rounded-full bg-iconbg relative items-center">
+            <p
+              class="font-sf absolute font-semibold left-7 top-5 text-[#FACA7F]"
+            >
+              3
+            </p>
+          </div>
+          <p class="font-sf text-xl font-semibold mt-8">
+            You’re set and ready to go!
+          </p>
+          <p
+            class="mt-5 font-sf text-[16px] font-medium text-justify opacity-20"
+          >
+            Now you can experience safe and private internet access. All of your
+            data traveling between your device and the VPN server is encrypted
+            to protect your privacy.
+          </p>
+        </div>
+      </div>
+      <div class="xs:flex justify-center mt-20">
+        <p class="font-sf">
+          If you are looking for step-by-step installation instructions, visit
+          <a class="font-sf underline text-[#FACA7F]" href="">Support Center</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-40">
+      <div class="xs:container xs:mx-auto">
+        <div class="flex">
+          <div class="md:basis-2/5 xs:basis-1/2 xs:items-center lg:pr-4">
+            <div class="ml-4 md:mb-10 xs:mb-5">
+              <a href="">
+                <img src="/image/logo.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="md:ml-4 xs:ml-0 flex items-baseline md:space-x-8 xs:space-x-2"
+            >
+              <div
+                class="border border-solid border-gray-400 lg:rounded-[16px] xs:rounded-[8px] md:w-20 overflow-hidden hover:bg-[#FACA7F]"
+              >
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-4 xs:mr-5 xs:my-3 transition duration-300 transform hover:-translate-y-1"
+                  src="/image/facebook.svg"
+                  alt=""
+                />
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-4 xs:mr-5 xs:my-3 transition duration-300 transform hover:-translate-y-1 hidden"
+                  src="/image/facebook1.png"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="border border-solid border-gray-400 lg:rounded-[16px] xs:rounded-[8px] md:w-20 overflow-hidden hover:bg-[#FACA7F]"
+              >
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-3 xs:mr-3 xs:my-3 transition duration-300 transform hover:-translate-y-1"
+                  src="/image/instagram.png"
+                  alt=""
+                />
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-3 xs:mr-3 xs:my-3 transition duration-300 transform hover:-translate-y-1 hidden"
+                  src="/image/instagram1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border border-solid border-gray-400 lg:rounded-[16px] xs:rounded-[8px] md:w-20 overflow-hidden hover:bg-[#FACA7F]"
+              >
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-3 xs:mr-3 xs:my-3 transition duration-300 transform hover:-translate-y-1"
+                  src="/image/linked-in.png"
+                  alt=""
+                />
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-3 xs:mr-3 xs:my-3 transition duration-300 transform hover:-translate-y-1 hidden"
+                  src="/image/linked-in1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border border-solid border-gray-400 lg:rounded-[16px] xs:rounded-[8px] md:w-20 overflow-hidden hover:bg-[#FACA7F]"
+              >
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-3 xs:mr-3 xs:my-3 transition duration-300 transform hover:-translate-y-1"
+                  src="/image/twitter.png"
+                  alt=""
+                />
+                <img
+                  class="md:mx-6 md:my-6 xs:ml-3 xs:mr-3 xs:my-3 transition duration-300 transform hover:-translate-y-1 hidden"
+                  src="/image/twitter1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="md:basis-3/5 xs:basis-1/2 xs:hidden sm:block">
+            <div class="xs:flex xs:justify-between">
+              <div class="md:space-x-6 ms:space-x-4">
+                <p class="font-sf lg:ml-4">Pages</p>
+                <ul class="mt-10 space-y-3">
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Support</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Download</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-sf">Legal</p>
+                <ul class="mt-10 space-y-3">
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Shipping Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Terms of Service</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-sf">Contact</p>
+                <ul class="mt-10 space-y-3">
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Live Chat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >WhatsApp</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-[#FACA7F] opacity-20 hover:opacity-100 duration-1000"
+                      href=""
+                      >Email</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sub-footer -->
+      <div class="mt-10 border-t-2 border-solid border-gray-600">
+        <div class="xs:container xs:mx-auto">
+          <div class="flex md:justify-between ms:justify-center md:m-3 ms:m-1">
+            <div>
+              <p class="opacity-20 xs:text-[8px] md:text-[14px]">
+                2023 &copy; OCTO VAULT VPN. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+            <div class="xs:flex md:space-x-4 xs:space-x-1">
+              <img
+                class="xs:w-[30px] xs:h-[20px] xs:mt-2 md:w-full md:h-auto"
+                src="/image/payment-platforms.png"
+                alt=""
+              />
+              <img
+                class="xs:w-[30px] xs:h-[20px] xs:mt-2 md:w-full md:h-auto"
+                src="/image/payment-platforms (1).png"
+                alt=""
+              />
+              <img
+                class="xs:w-[30px] xs:h-[20px] xs:mt-2 md:w-full md:h-auto"
+                src="/image/payment-platforms (2).png"
+                alt=""
+              />
+              <img
+                class="xs:w-[30px] xs:h-[20px] xs:mt-2 md:mt-0 md:w-full md:h-auto"
+                src="/image/payment-platforms (3).png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function changeImage() {
+        var image1 = document.getElementById("image1");
+        var image2 = document.getElementById("image2");
+        var text = document.getElementById("text");
+
+        if (image1.style.opacity == 1) {
+          image1.style.opacity = 0;
+          image2.style.opacity = 1;
+          text.style.color = "black";
+        } else {
+          image1.style.opacity = 1;
+          image2.style.opacity = 0;
+          text.style.color = "white";
+        }
+      }
+    </script>
+  </body>
+</html>
